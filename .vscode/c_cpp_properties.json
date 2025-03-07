@@ -1,0 +1,34 @@
+{
+  "env": {
+    "kernelFolder": "${workspaceFolder}/../kernel"
+  },
+  "configurations": [
+    {
+      "name": "Linux Modules",
+      "includePath": [
+        "${workspaceFolder}/**",
+        "${kernelFolder}/include",
+        "${kernelFolder}/include/uapi",
+        "${kernelFolder}/arch/arm/include",
+        "${kernelFolder}/arch/arm/include/uapi",
+        "${kernelFolder}/arch/arm/include/generated",
+        "${kernelFolder}/arch/arm/include/generated/uapi"
+      ],
+      "forcedInclude": [
+        "${kernelFolder}/include/generated/autoconf.h"
+      ],
+      "defines": [
+        "__KERNEL__",
+        "MODULE"
+      ],
+      "compilerPath": "/usr/bin/arm-none-eabi-gcc",
+      "cStandard": "gnu11",
+      "intelliSenseMode": "linux-gcc-arm",
+      "dotConfig": "${kernelFolder}/.config",
+      "browse": {
+        "limitSymbolsToIncludedHeaders": true
+      }
+    }
+  ],
+  "version": 4
+}
