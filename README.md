@@ -28,3 +28,4 @@ ARCH = arm
 //compiler to be used to build the module
 CROSS_COMPILE = arm-none-eabi-
 ```
+- Copy .clang-format from kernel folder

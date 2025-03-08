@@ -26,7 +26,15 @@
       "intelliSenseMode": "linux-gcc-arm",
       "dotConfig": "${kernelFolder}/.config",
       "browse": {
-        "limitSymbolsToIncludedHeaders": true
+        "limitSymbolsToIncludedHeaders": true,
+        "path": [
+          "${kernelFolder}/include",
+          "${kernelFolder}/include/uapi",
+          "${kernelFolder}/arch/arm/include",
+          "${kernelFolder}/arch/arm/include/uapi",
+          "${kernelFolder}/arch/arm/include/generated",
+          "${kernelFolder}/arch/arm/include/generated/uapi"
+        ]
       }
     }
   ],
